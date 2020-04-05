@@ -1,0 +1,146 @@
+html, body {
+  height: 100%;
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  padding: 1% 0 0;
+  color: #FEF2BF;
+}
+
+.game-btn {
+  margin: 25px;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-btn:hover {
+  cursor: pointer;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.start-btn {
+  width: 100px;
+  height: 100px;
+  background-color: #b30000;
+  border: none;
+  color: #FEF2BF;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  box-shadow: 0 5px #1a0000;
+}
+.start-btn:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+/* footer styling */
+.footer-icons {
+  color: white;
+}
+
+.footer-icons:hover {
+  color: #333;
+}
+
+.copyright {
+  font-size: .9rem;
+  margin-bottom: 0;
+  color: white;
+}
+
+#footer {
+  height: 180px;
+}
+
+#footer .container-fluid {
+  padding: 20px 0 20px;
+}
+
+#footer .container-fluid .row {
+  padding: 10px 0 0;
+}
+
+#contact-btn {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -180px;
+  /* Pad bottom by footer height */
+  padding: 0 0 180px;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1200px) {
+  #level-title {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  #level-title {
+    font-size: 2rem;
+  }
+
+  .game-btn {
+    height: 150px;
+    width: 150px;
+    border: 10px solid black;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .game-btn {
+    height: 100px;
+    width: 100px;
+    border: 7px solid black;
+  }
+
+  .start-btn {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+}
